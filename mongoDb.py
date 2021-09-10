@@ -26,7 +26,7 @@ class MongoDb:
     @staticmethod
     def initDB():
         if not MongoDb.client:
-            MongoDb.client = MongoClient("mongodb+srv://test:test@cluster0.xnnul.mongodb.net/ChatApp?retryWrites=true&w=majority")
+            MongoDb.client = MongoClient("...MongoDB database link...")
         if not MongoDb.db:
             MongoDb.db = MongoDb.client["ChatApp"]
         if not MongoDb.collection:
